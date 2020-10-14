@@ -15,7 +15,8 @@
     "node": ">= 7.6.0"
   },
   "scripts": {
-    "prepare": "node scripts/download-opencc-database.js"
+    "prep": "node scripts/download-opencc-database.js && npm test",
+    "test": "npm run prep && mocha"
   },
   "files": [
     "dist/*",
